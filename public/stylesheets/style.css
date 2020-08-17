@@ -1,0 +1,15 @@
+form {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+  color: #61db;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+a {
+  margin: 50px;
+}

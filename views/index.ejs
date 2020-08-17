@@ -6,11 +6,20 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="/new" class="btn btn-outline-success my-2 my-sm-0">Add Message</a>
+    </nav>
     <h1><%= title %></h1>
-    <ul class="">
+    <ul class="container">
       <% messages.forEach(m => { %>
-        <li><%= m.user %>: <%= m.text %> - <%= m.added %>  </li>
+        <li class="card mb-4">
+          <div class="card-body">
+            <h2><%= m.user %>:</h2>
+            <h3><%= m.text %></h3>
+            <p><%= m.added %></p>  
+          </div>
+        </li>
       <% }) %> 
-    </ul> 
+    </ul>
   </body>
 </html>
